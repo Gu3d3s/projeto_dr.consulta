@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: hsl(207, 97%, 42%);
+    --third-color: hsl(207, 97%, 39%);
+    --fourth-color: #fff;
+    --fifth-color: #000;
+    --sixth-color: #777777;
+    --under: 0;
+}
+.dark-theme {
+    --primary-color: #000;
+    --third-color: #000;
+    --fourth-color: #000;
+    --fifth-color: #fff;
+    --sixth-color: #fff;
+    --under: underline;
+
+}
+nav {
+    position: absolute;
+    width: 100%;
+    padding: 10px 25px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.material-symbols-outlined {
+    color: #fff;
+    cursor: pointer;
+}
+
+nav h1 {
+    font-family: 'Bree Serif', serif;
+    color: #fff;
+}
+nav a {
+    text-decoration: none;
+}
+nav span {
+    color: aqua;
+}
+nav section {
+    align-items: center;
+    display: flex;
+    text-align: center;
+    color: #fff;
+}
+nav section a {
+    color: #fff;
+    font-size: 17px;
+    text-decoration: 0;
+    font-family: 'Bree Serif', serif;
+    margin: 0px 2.5px;
+    padding: 8px;
+    transition: 0.4s;
+    text-decoration: var(--under);
+}
+nav section a:hover {
+    background-color: #ffffff36;
+    border-radius: 4px;
+}
+nav section p {
+    font-size: 20px;
+    font-weight: bold;
+}
+nav li {
+    display:inline-block
+}
+
+.dropdown-menu a {
+    font-family: 'Bree Serif', serif;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+    background-color: var(--third-color);
+    color: #fff;
+    border-bottom: 2px solid  #fff;
+    transition: 0.35s;
+    text-decoration: var(--under);
+}
+.dropdown-menu a:hover {
+    background-color: hsl(207, 97%, 28%);
+}
+.dropdown-menu {
+    position: absolute;
+    display: none;
+    border-radius:10px;
+    
+}
+.dropdown-menu a {
+    display: block;
+    color: #fff;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.area-login {
+    width: 100%;
+    height: 100vh;
+    background-color: #eeeeee;
+    display: grid;
+    place-items: center;
+}
+.login {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--fourth-color);
+    padding: 30px 30px;
+    padding-bottom: 55px;
+    border: 2px solid hsl(207, 97%, 42%);
+    border-radius: 8px;
+}
+.login h1 {
+    font-family: 'Bree Serif', serif;
+    font-size: 40px;
+    text-align: center;
+    color: var(--fifth-color);
+}
+.em {
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px 20px;
+    font-size: 20px;
+    border: 2px solid #aaaaaa;
+    border-radius: 6px;
+    outline: 0;
+    transition: 0.2s;
+}
+.ps {
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px 20px;
+    font-size: 20px;
+    border: 2px solid #aaaaaa;
+    border-radius: 6px;
+    outline: 0;
+    transition: 0.2s;
+}
+.em:hover, .ps:hover {
+    border: 2px solid hsl(207, 97%, 42%);
+}
+.fs {
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 10px;
+    color: var(--sixth-color);
+    font-weight: bold;
+}
+.bt-login {
+    width: 100%;
+    background-color: hsl(207, 97%, 42%);
+    text-decoration: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0px;
+    border-radius: 6px;
+    margin-top: 10px;
+    transition: 0.3s linear;
+    border: 0;
+    cursor: pointer;
+}
+.bt-login:hover {
+    box-shadow: 8px 8px hsl(207, 100%, 17%);
+}
+.cd {
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 15px;
+    color: var(--sixth-color);
+    font-weight: bold;
+}

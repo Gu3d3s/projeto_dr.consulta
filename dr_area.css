@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary-color: 0;
+    --third-color: hsl(207, 95%, 17%);
+    --fouth-color: #f5f5f5;
+    --fifith-color: #ccc;
+    --sixth-color: #fff;
+    --seventh-color: hsl(207, 95%, 39%);
+    --eighty-color: #000;
+    --ninety-color: hsl(207, 94%, 33%);
+    --tenth-color: hsl(207, 97%, 29%);
+    --eleventh-color: hsl(207, 95%, 17%);
+    --12-color: rgb(112, 112, 255);
+    --13-color: hsl(207, 97%, 36%);
+    --fourteen-color: #585858;
+    --15-color: #fff;
+    --pw: #fff;
+    --under: 0;
+    --under2: 0;
+}
+.dark-theme {
+    --primary-color: #000;
+    --third-color: #fff;
+    --fouth-color: #000;
+    --fifith-color: #fff;
+    --sixth-color: #000;
+    --seventh-color: #fff;
+    --eighty-color: #fff;
+    --ninety-color: #fff;
+    --tenth-color: #fff;
+    --eleventh-color: #fff;
+    --12-color: #fff;
+    --13-color: #000;
+    --fourteen-color: #fff;
+    --15-color: #000;
+    --pw: #fff;
+    --under: underline;
+    --under2: underline #fff;
+}
+#icon {
+    cursor: pointer;
+}
+body {
+    background-color: var(--15-color);
+}
+nav {
+    position: absolute;
+    width: 100%;
+    padding: 10px 25px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.material-symbols-outlined {
+    color: #fff;
+    cursor: pointer;
+}
+
+nav h1 {
+    font-family: 'Bree Serif', serif;
+    color: #fff;
+}
+nav a {
+    text-decoration: none;
+}
+nav span {
+    color: aqua;
+}
+nav section {
+    align-items: center;
+    display: flex;
+    text-align: center;
+    color: #fff;
+}
+nav section a {
+    color: #fff;
+    font-size: 17px;
+    text-decoration: 0;
+    font-family: 'Bree Serif', serif;
+    margin: 0px 2.5px;
+    padding: 8px;
+    transition: 0.4s;
+}
+nav section a:hover {
+    background-color: #ffffff36;
+    border-radius: 4px;
+}
+nav section p {
+    font-size: 20px;
+    font-weight: bold;
+}
+nav li {
+    display:inline-block
+}
+
+.dropdown-menu a {
+    font-family: 'Bree Serif', serif;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+    background-color: var(--13-color);
+    color: #fff;
+    border-bottom: 2px solid  var(--12-color);
+    transition: 0.35s;
+    text-decoration: var(--under);
+
+}
+.dropdown-menu a:hover {
+    background-color: hsl(207, 97%, 28%);
+}
+.dropdown-menu {
+    position: absolute;
+    display: none;
+    border-radius:10px;
+    
+}
+.dropdown-menu a {
+    display: block;
+    color: #fff;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.area {
+    padding: 65px;
+    width: 100%;
+    height: 60vh;
+    background:  url(area_f.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pas {
+    font-family: 'Bree Serif', serif;
+    color: #fff;
+    font-size: 40px;
+    margin-top: 20px;
+    width: fit-content;
+    background-color: var(--primary-color);
+    text-decoration: var(--under);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 4px;
+}
+.ponto {
+    color: aqua;
+    font-weight: bolder;
+}
+.s {
+    font-family: 'Bree Serif', serif;
+    color: #fff;
+    margin-top: 16px;
+    width: fit-content;
+    background-color: var(--primary-color);
+    text-decoration: var(--under);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 4px;
+}
+.in {
+    display: flex;
+    margin-top: 30px;
+    background-color: var(--primary-color);
+    padding: 8px;
+    border-radius: 9px;
+}
+.input-style {
+    padding: 15px 32px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 13px;
+    color: #555;
+    outline: none;
+    width: 100%;
+    border-radius: 8px;
+}
+.buscar {
+    text-decoration: 0;
+    background-color: hsl(207, 98%, 39%);
+    color: #fff;
+    width: 350px;
+    margin: 0px 25px;
+    padding: 15px 0px;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    border: 2px solid hsl(207, 94%, 33%);
+    border-radius: 8px;
+    transition: 0.5s;
+}
+.buscar:hover {
+    box-shadow: 5px 5px var(--third-color);
+}
+.cts {
+    background-color: var(--fouth-color);
+    box-sizing: border-box;
+    padding: 40px 30px;
+}
+.tdct {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.sb {
+    background-color: var(--sixth-color);
+    width: 80vw;
+    height: 200px;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 10px;
+    border: 2px solid var(--fifith-color);
+    border-radius: 5px;
+    padding: 20px;
+}
+.htwo {
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--seventh-color);
+    text-decoration: var(--under);
+}
+.pr {
+    margin-top: 55px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    color: var(--eighty-color);
+    text-decoration: var(--under);
+}
+.aa {
+    position: absolute;
+    text-decoration: var(--under);
+    font-family: 'Nunito Sans', sans-serif;
+    border: 2px solid var(--ninety-color);
+    border-radius: 5px;
+    color: var(--tenth-color);
+    transition: 0.5s;
+    padding: 5px 50px;
+    margin-left: 90px;
+    margin-top: 10px;
+}
+.aa:hover {
+    box-shadow: 4px 4px var(--eleventh-color);
+}
+.rodape {
+    background-color: var(--sixth-color);
+    width: 100%;
+    height: 45vh;
+    border-top: 2px solid hsl(207, 97%, 36%);
+    padding: 30px 65px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.rodape ul {
+    text-decoration: var(--under2);
+}
+.rodape ul li {
+    list-style: none;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.rodape ul li a {
+    color: var(--fourteen-color);
+    font-size: 15px;
+}
+.rodape ul p {
+    color: var(--eighty-color);
+    line-height: 55px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+@media (max-width: 640px) {
+    .dr {
+        font-size: 30px;
+    }
+    .ponto {
+        font-size: 45px;
+    }
+    .tel {
+        font-size: 17px;
+    }
+}
+@media (max-width: 600px) {
+    .in {
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .buscar {
+        width: 100%;
+        margin: 10px 0px;
+    }
+    .pas {
+        font-size: 35px;
+        margin-top: 0;
+        line-height: 30px;
+    }
+    .s {
+        font-size: 16px;
+    }
+}
+@media (max-width: 550px) {
+    .pas {
+        font-size: 30px;
+    }
+    .s {
+        font-size: 13px;
+    }
+}

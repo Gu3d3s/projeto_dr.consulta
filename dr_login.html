@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="dr_login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+    
+</head>
+<body>
+    <nav>
+        <ul>
+          <li class="dropdown">
+
+            <span class="material-symbols-outlined">menu</span>
+          
+          <div class="dropdown-menu">
+            <a href="dr_area.html">Área do paciente</a>
+            <a href="dr_area.html">Consultas</a>
+            <a href="dr_area.html">Exames</a>
+            <a href="dr_area.html">Check-ups</a>
+            <a href="dr_area.html">Vacinas</a>
+            <a href="dr_area.html">Cirurgia</a>
+            <a href="dr_area.html">Profissionais</a>
+            <a href="dr_area.html">Unidades</a>
+            <a href="dr_area.html">Ajuda(FAQ)</a>
+            <a href="dr_area.html">Blog</a>
+            <a href="dr_area.html">Sobre nós</a>
+            <a href="dr_area.html">Portal de privacidade</a>
+          </div>
+
+          </li>
+        </ul>
+        <a href="dr.html"><h1>dr<span>.</span>consulta</h1></a>
+        
+        <section>
+          <span class="material-symbols-outlined" id="icon">
+            brightness_medium
+            </span>
+          <a href="dr_login.html">Entrar</a>
+          <p>/</p>
+          <a href="">Cadastrar</a>
+        </section>
+      
+      </nav>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+      
+      <div class="area-login">
+        <form action="" class="login">
+            <h1>Faça seu login</h1>
+            <input type="email" class="em" placeholder="Email" required>
+            <input type="password" class="ps" placeholder="Senha" required>
+            <a href="#" class="fs">Esqueceu a senha?</a>
+            <input type="submit" class="bt-login" Value="Entrar">
+            <a href="#" class="cd">Não tem uma conta? Crie agora</a>
+        </form>
+      </div>
+      <script>
+        var icon = document.getElementById('icon')
+
+        icon.onclick = function(){
+            document.body.classList.toggle('dark-theme')
+        }
+      </script>
+</body>
+</html>
